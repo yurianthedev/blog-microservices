@@ -14,6 +14,9 @@ export default ({ comments }) => {
             case "rejected":
                 content = "This comment is has been rejected";
                 break;
+            default:
+                content = "";
+                break;
         }
 
         return <li key={comment.id}>
